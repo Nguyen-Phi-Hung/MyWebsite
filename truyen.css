@@ -1,0 +1,67 @@
+h1{font-size: 60px;
+    text-align: center;
+    color: red;}
+h2{ border-style: double;
+    color :white;
+    font-style :italic;
+    text-align: left;
+    line-height: 1.7;
+    font-family: 'Creepster', cursive;
+    margin :20px;
+
+}
+a{font-size: 60px;
+    text-align: center;
+    color: red;
+    font-style :italic;
+}
+body {
+    background : url("https://31.media.tumblr.com/tumblr_m5qmll1z3Y1rpcnnto1_500.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;}
+.coca {
+    text-align: center;
+    width : "500px";
+}
+.red {
+    text-align: center;
+}
+.jeff {
+    text-align: center;
+}
+.centered{
+    text-align: center;
+}
+.tieude{
+    text-align: center;
+    text-size-adjust: 16px;
+}
+.hachi{
+    text-align: center;
+}
+hr {
+    height: 4px;
+    background-color: red;
+}
+p{
+    color:red;
+    text-align :center;
+}
+.genre-dropdown {
+    margin-bottom: 40px;
+}
+label {
+    color: white;
+    font-size: 20px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+select:focus {
+    outline: none;
+}

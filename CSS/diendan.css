@@ -1,5 +1,5 @@
 body {
-    background: url("https://i.pinimg.com/originals/ec/14/3c/ec143c9daeb47615cbd3141f86088373.gif");
+    background: url("../RES/backgroundid.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -189,4 +189,22 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+#username-input {
+    width: 30%; 
+    float: left; 
+    margin-left: 100px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    margin-right: 10px;
 }

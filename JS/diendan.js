@@ -17,3 +17,21 @@ function searchStory() {
         }
     }
 }
+function postComment() {
+    var usernameInput = document.getElementById('username-input').value;
+    var commentInput = document.getElementById('comment-input').value;
+    var commentsList = document.getElementById('comments-list');
+
+    var commentContainer = document.createElement('div');
+    commentContainer.classList.add('comment');
+    var commentText = document.createElement('p');
+    commentText.innerHTML = '<strong>' + usernameInput + ':</strong> ' + commentInput;
+
+
+    commentContainer.appendChild(commentText);
+    commentsList.appendChild(commentContainer);
+
+
+    document.getElementById('username-input').value = '';
+    document.getElementById('comment-input').value = '';
+}

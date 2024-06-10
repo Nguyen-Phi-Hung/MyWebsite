@@ -16,7 +16,7 @@ a{font-size: 60px;
     font-style :italic;
 }
 body {
-    background : url("../RES/backgroundtruyen.gif");
+    background : url("https://31.media.tumblr.com/tumblr_m5qmll1z3Y1rpcnnto1_500.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -64,6 +64,19 @@ select {
 
 select:focus {
     outline: none;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+footer a {
+    font-size: 20px;
+}
+p {
+color :black;
 }
 nav {
     text-align: center;

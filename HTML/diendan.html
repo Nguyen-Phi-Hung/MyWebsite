@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diễn đàn Creepypasta</title>
+    <link rel="stylesheet" href="../CSS/diendan.css">
+</head>
+<body>
+    <h1><a href="index.html">Creepypasta</a></h1>
+    <hr>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Thể loại</a>
+            <div class="dropdown-content">
+                <a href="satnhan.html">Sát nhân</a>
+                <a href="tamlinh.html">Tâm linh</a>
+            </div>
+        </div>
+        <a href="diendan.html">Diễn đàn</a>
+    </nav>
+    
+    <div class="container">
+        <div class="search-section">
+            <h2>Tìm kiếm tên truyện</h2>
+            <input type="text" id="search-input" placeholder="Nhập tên truyện...   VD:red, hypher coca" onkeyup="searchStory()">
+        </div>
+
+        <div class="story-list" id="story-list">
+            <div class="story-item">
+                <a href="coca.html">Hypher Coca</a>
+            </div>
+            <div class="story-item">
+                <a href="red.html">Red</a>
+            </div>
+            <div class="story-item">
+                <a href="jeffthekiller.html">Jeff the Killer</a>
+            </div>
+            <div class ="story-item">
+                <a href="cao8fet.html">Hachishakusama </a>
+            </div>
+        </div>
+
+        <div class="comments-section">
+            <h2>Phần bình luận</h2>
+            <div class="comment-box">
+                <textarea placeholder="Viết bình luận của bạn..." required></textarea>
+                <button type="submit">Gửi</button>
+            </div>
+            <div class="comments-list">
+                <div class="comment">
+                    <p><strong>Người dùng 1:</strong> Truyện này thật kinh dị!</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Người dùng 2:</strong> Mình rất thích truyện này!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>2024 Creepypasta. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/diendan.js"></script>
+</body>
+</html>

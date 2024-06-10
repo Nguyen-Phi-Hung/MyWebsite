@@ -8,21 +8,45 @@
 </head>
 <body>
     <h1><a href=index.html>Creepypasta</a></h1>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Thể loại</a>
+            <div class="dropdown-content">
+                <a href="satnhan.html">Sát nhân</a>
+                <a href="tamlinh.html">Tâm linh</a>
+            </div>
+        </div>
+        <a href="diendan.html">Diễn đàn</a>
+    </nav>
+    <div class="container">
+        <div class="search-section">
+            <h2>Tìm kiếm tên truyện</h2>
+            <input type="text" id="search-input" placeholder="Nhập tên truyện..." onkeyup="searchStory()">
+        </div>
+
+        <div class="story-list" id="story-list">
+            <div class="story-item">
+                <a href="coca.html">Hypher Coca</a>
+            </div>
+            <div class="story-item">
+                <a href="red.html">Red</a>
+            </div>
+            <div class="story-item">
+                <a href="jeffthekiller.html">Jeff the Killer</a>
+            </div>
+            <div class ="story-item">
+                <a href="cao8fet.html">Hachishakusama </a>
+            </div>
+
+        </div>
     <hr>
-    <div class="genre-dropdown">
-        <label for="genre-select">Thể loại:</label>
-        <select id="genre-select" onchange="location = this.value;">
-            <option value="#" selected disabled>Chọn thể loại</option>
-            <option value="satnhan.html">Sát nhân</option>
-            <option value="tamlinh.html">Tâm linh</option>
-        </select>
-    </div>
     <div class="tnt">
         <h2>Những câu truyện creepypasta nổi tiếng</h2>
         <div class="story-row">
             <div class="story">
                 <a href="coca.html" class="story-link">
-                    <img src="../RES/coca.jpg" style="width: 300px;" alt="Hypher Coca">
+                    <img src="../nguyenphihung.html/coca.jpg " style="width: 300px;" alt="Hypher Coca">
                 </a>
                 <div class="caption">
                     <a href="coca.html" class="story-link">Hypher Coca</a>
@@ -66,5 +90,7 @@
     <footer>
         <p>2024 Creepypasta. All rights reserved.</p>
     </footer>
+    
+    <script src="../JS/diendan.js"></script>
 </body>
 </html>

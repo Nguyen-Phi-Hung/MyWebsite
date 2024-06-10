@@ -65,3 +65,40 @@ select {
 select:focus {
     outline: none;
 }
+nav {
+    text-align: center;
+}
+nav a {
+    color: white;
+    font-size: 20px;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+
+.dropbtn {
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}

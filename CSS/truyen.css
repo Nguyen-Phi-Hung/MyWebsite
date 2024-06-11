@@ -1,53 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="../CSS/truyen.css">
-</head>
-<body>
-    <div class="centered">
-        <a href="index.html">CREEPYPASTA</a>
-    </div>
-    <br><hr>
-    <h3 style="color: white;">Những truyện truyền thuyết đô thị mang yếu tố tâm linh luôn thu hút được sự tò mò của tất cả chúng ta</h3>
-    <br><hr>     <nav>
-        <a href="index.html">Trang chủ</a>
-        <div class="dropdown">
-            <a href="#" class="dropbtn">Thể loại</a>
-            <div class="dropdown-content">
-                <a href="satnhan.html">Sát nhân</a>
-                <a href="tamlinh.html">Tâm linh</a>
-            </div>
-        </div>
-        <a href="diendan.html">Diễn đàn</a>
-    </nav><br>
-    <div class="coca">
-        <a href="coca.html">
-            <img src="../RES/coca.jpg" width="300px">
-        </a>
-    </div>
-    <div class="tieude">
-        <a href="coca.html">Hypher Coca</a>
-    </div>
-    <br><br><br>
-    <div class="red">
-        <a href="red.html">
-            <img src="../RES/red.jpg" width="600px">
-        </a>
-    </div>
-    <div class="tieude">
-        <a href="red.html">Red</a>
-    </div>
-    <br><br><br>
-    <div class="hachi">
-        <a href="cao8fet.html">
-            <img src="../RES/8fet1.jpg" width="600px">
-        </a>
-    </div>
-    <div class="tieude">
-        <a href="cao8fet.html">Hachishakusama</a>
-    </div>
-    <footer>
-        <p>2024 Creepypasta. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+h1 {
+    font-size: 8vw;
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    border-style: double;
+    color: white;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.7;
+    font-family: 'Creepster', cursive;
+    margin: 2vw;
+}
+
+a {
+    font-size: 8vw;
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+body {
+    background: url("../RES/backgroundtruyen.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.coca, .red, .jeff, .centered, .tieude, .hachi {
+    text-align: center;
+}
+
+.tieude {
+    text-size-adjust: 2vw;
+}
+
+hr {
+    height: 0.4vw;
+    background-color: red;
+}
+
+p {
+    color: black;
+    text-align: center;
+}
+
+.genre-dropdown {
+    margin-bottom: 5vw;
+}
+
+label {
+    color: white;
+    font-size: 1.5vw;
+}
+
+select {
+    padding: 1vw;
+    font-size: 1.5vw;
+}
+
+select:focus {
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+footer a {
+    font-size: 1.5vw;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5vw;
+    margin: 0 3vw;
+    text-decoration: none;
+    padding: 2vw;
+    border-radius: 1vw;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 40vw;
+    box-shadow: 0px 1vw 2vw 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 2vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        display: block;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    hr {
+        background-color: blue;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-icon {
+        font-size: 5vw;
+    }
+    .menu-dropdown a {
+        font-size: 3vw;
+        padding: 5vw;
+    }
+    hr {
+        background-color: green;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-icon {
+        font-size: 5vw;
+    }
+    .menu-dropdown a {
+        font-size: 3vw;
+        padding: 5vw;
+    }
+    hr {
+        background-color: purple;
+    }
+}

@@ -1,4 +1,3 @@
-
 body {
     background: url("../RES/backgroundid.gif");
     background-repeat: no-repeat;
@@ -204,7 +203,6 @@ footer {
     display: table;
 }
 
-
 /* Hamburger menu */
 .hamburger-menu {
     display: none;
@@ -284,6 +282,7 @@ footer {
         padding: 20px;
     }
 }
+
 @media (max-width: 767px) and (max-width:1023px) {
     .menu-icon {
         font-size: 40px;

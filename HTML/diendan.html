@@ -9,6 +9,8 @@
 <body>
     <h1><a href="index.html">Creepypasta</a></h1>
     <hr>
+    
+    <!-- Regular navigation -->
     <nav>
         <a href="index.html">Trang chủ</a>
         <div class="dropdown">
@@ -20,7 +22,24 @@
         </div>
         <a href="diendan.html">Diễn đàn</a>
     </nav>
-    
+
+    <!-- Hamburger menu for smaller screens -->
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="menu-dropdown">
+            <a href="index.html">Trang chủ</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Thể loại</a>
+                <div class="dropdown-content">
+                    <a href="satnhan.html">Sát nhân</a>
+                    <a href="tamlinh.html">Tâm linh</a>
+                </div>
+            </div>
+            <a href="diendan.html">Diễn đàn</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
     <div class="container">
         <div class="search-section">
             <h2>Tìm kiếm tên truyện</h2>
@@ -37,8 +56,8 @@
             <div class="story-item">
                 <a href="jeffthekiller.html">Jeff the Killer</a>
             </div>
-            <div class ="story-item">
-                <a href="cao8fet.html">Hachishakusama </a>
+            <div class="story-item">
+                <a href="cao8fet.html">Hachishakusama</a>
             </div>
         </div>
         <p> Bình luận :</p>
@@ -47,7 +66,7 @@
             <textarea id="comment-input" placeholder="Viết bình luận của bạn..." required></textarea>
             <button type="submit" onclick="postComment()">Gửi</button>
         </div>
-        
+
         <div class="comments-list" id="comments-list">
 
         </div>
@@ -63,10 +82,8 @@
                 <div class="comment">
                     <p><strong>thien486:</strong> good chóp em!</p>
                 </div>
-            </div>
-        </div>
     </div>
-    
+
     <footer>
         <p>2024 Creepypasta. All rights reserved.</p>
     </footer>

@@ -1,3 +1,4 @@
+
 body {
     background: url("../RES/backgroundid.gif");
     background-repeat: no-repeat;
@@ -103,7 +104,7 @@ nav a:hover {
 }
 
 .story-item {
-    display: none; /* Initially hide all stories */
+    display: none; 
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     border-radius: 4px;
@@ -192,9 +193,9 @@ footer {
 }
 
 #username-input {
-    width: 30%; 
-    float: left; 
-    margin-left: 100px;
+    width: 30%;
+    float: left;
+    margin-left: 50px;
 }
 
 .clearfix::after {
@@ -202,9 +203,94 @@ footer {
     clear: both;
     display: table;
 }
-.avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; 
-    margin-right: 10px;
+
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 10;
+    left: 0; 
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #333;
+}
+
+.menu-dropdown {
+    display: none;
+    flex-direction: row; 
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 0; 
+    width: 100%;
+    z-index: 3; 
+}
+
+.menu-dropdown a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid #444;
+    display: inline-block; 
+}
+
+.menu-dropdown .dropdown-content {
+    position: relative;
+    background-color: #333;
+    z-index: 2;
+}
+
+.menu-dropdown .dropdown-content a {
+    color: white;
+    padding: 10px;
+    border-left: 2px solid #444;
+    display: block; 
+}
+
+.menu-dropdown .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#menu-toggle:checked + .menu-icon + .menu-dropdown {
+    display: flex;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-icon {
+        font-size: 40px;
+    }
+
+    .menu-dropdown a {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+@media (max-width: 767px) and (max-width:1023px) {
+    .menu-icon {
+        font-size: 40px;
+    }
+
+    .menu-dropdown a {
+        font-size: 18px;
+        padding: 20px;
+    }
 }

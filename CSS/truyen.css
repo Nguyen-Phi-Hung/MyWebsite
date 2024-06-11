@@ -1,57 +1,56 @@
-h1{font-size: 60px;
+h1 {
+    font-size: 60px;
     text-align: center;
-    color: red;}
-h2{ border-style: double;
-    color :white;
-    font-style :italic;
+    color: red;
+}
+
+h2 {
+    border-style: double;
+    color: white;
+    font-style: italic;
     text-align: left;
     line-height: 1.7;
     font-family: 'Creepster', cursive;
-    margin :20px;
-
+    margin: 20px;
 }
-a{font-size: 60px;
+
+a {
+    font-size: 60px;
     text-align: center;
     color: red;
-    font-style :italic;
+    font-style: italic;
 }
+
 body {
-    background : url("../RES/backgroundtruyen.gif");
+    background: url("../RES/backgroundtruyen.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;}
-.coca {
-    text-align: center;
-    width : "500px";
+    background-size: cover;
 }
-.red {
+
+.coca, .red, .jeff, .centered, .tieude, .hachi {
     text-align: center;
 }
-.jeff {
-    text-align: center;
-}
-.centered{
-    text-align: center;
-}
-.tieude{
-    text-align: center;
+
+.tieude {
     text-size-adjust: 16px;
 }
-.hachi{
-    text-align: center;
-}
+
 hr {
     height: 4px;
     background-color: red;
 }
-p{
-    color:red;
-    text-align :center;
+
+p {
+    color: black;
+    text-align: center;
 }
+
 .genre-dropdown {
     margin-bottom: 40px;
 }
+
 label {
     color: white;
     font-size: 20px;
@@ -75,12 +74,11 @@ footer {
 footer a {
     font-size: 20px;
 }
-p {
-color :black;
-}
+
 nav {
     text-align: center;
 }
+
 nav a {
     color: white;
     font-size: 20px;
@@ -101,22 +99,19 @@ nav a:hover {
     position: relative;
 }
 
-/* Dropdown button */
 .dropbtn {
     cursor: pointer;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-/* Dropdown links */
 .dropdown-content a {
     color: white;
     padding: 12px 16px;
@@ -125,12 +120,48 @@ nav a:hover {
     text-align: left;
 }
 
-/* Dropdown links hover */
 .dropdown-content a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        display: block;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    hr {
+        background-color: blue;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-icon {
+        font-size: 40px;
+    }
+    .menu-dropdown a {
+        font-size: 18px;
+        padding: 20px;
+    }
+    hr {
+        background-color: green;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-icon {
+        font-size: 40px;
+    }
+    .menu-dropdown a {
+        font-size: 18px;
+        padding: 20px;
+    }
+    hr {
+        background-color: purple;
+    }
 }
